@@ -1,0 +1,234 @@
+/*
+Resetting default styles
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+/*
+Body styles
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*
+Navigation styles
+*/
+
+nav {
+    background: #4CAF50;
+    height: 80px;
+    width: 100%;
+}
+
+/*
+Site logo styles
+*/
+
+label.site-logo {
+    color: white;
+    font-size: 24px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+/*
+Navigation list styles
+*/
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/*
+Hover and active link styles
+*/
+
+a.active, a:hover {
+    background: #45a049;
+    transition: .5s;
+}
+
+/*
+Menu toggle label styles
+*/
+
+.menu-toggle-label {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/*
+Checkbox input styles
+*/
+
+#menu-toggle {
+    display: none;
+}
+
+/*
+Media query for smaller screens
+*/
+
+@media (max-width: 768px) {
+    label.site-logo {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .menu-toggle-label {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0c101a;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #4CAF50;
+    }
+
+    #menu-toggle:checked ~ ul {
+        left: 0;
+    }
+}
+
+/*
+Media query for medium screens
+*/
+
+@media (min-width: 769px) and (max-width: 881px) {
+    label.site-logo {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .menu-toggle-label {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0c101a;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #4CAF50;
+    }
+
+    #menu-toggle:checked ~ ul {
+        left: 0;
+    }
+}
+
+/*
+Section styles
+*/
+
+.index-section {
+    background: url(https://scp-sandbox-3.wikidot.com/local--files/ananomalouswriter/neon%20multi%20color%20v3.jpg) no-repeat center center/cover;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+Section overlay styles
+*/
+
+.section-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/*
+Heading styles within section overlay
+*/
+
+.section-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/*
+Paragraph styles within section overlay
+*/
+
+.section-overlay p {
+    font-size: 18px;
+}
